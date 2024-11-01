@@ -1,0 +1,51 @@
+/*! Widgets In Tabs */
+ .wit-tab-title {
+    padding: 2px 4px;
+    cursor: pointer;
+    opacity: .2;
+    word-wrap: normal;
+    overflow-wrap: normal;
+    float: none;
+    text-decoration: none !important;
+    -webkit-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+.wit-tab-title:focus {
+	outline: 0;
+}
+.wit-tab-title:hover {
+    opacity: 1;
+}
+.wit-tab-title.wit-selected {
+    opacity: 1;
+}
+.wit-title.show-all {
+    overflow: visible;
+    white-space: normal;
+}
+.wit-title.show-all .wit-tab-title:after {
+    content:" ";
+}
+.wit-tab-container {
+    position: relative;
+}
+.wit-tab-container > li {
+    list-style: none;
+}
+.wit-tab-content {
+    position: absolute;
+    width: 100%;
+}
+.wit-tab-content.wit-selected {
+    position: inherit;
+}
+.wit-title {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow-wrap: normal;
+}
+.ps-container .ps-scrollbar-x-rail, .ps-container .ps-scrollbar-x {
+    height: 4px;
+}
